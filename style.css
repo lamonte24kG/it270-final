@@ -1,184 +1,617 @@
-/*Styles for my IT270 final project
-Name: Final-project
+/* styles for my first worpdress website 
+Name: Final Project
 Author: LaMonte Golden
 Date: August 2024
+Theme Name: it270 final 
 */
-
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background: black;
-    color: rgb(210, 211, 214);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
 }
 
 body{
-    background:black;
-    font-family: "Archivo Black", sans-serif;
-    color:rgb(220, 222, 224);
+    background: black;
+    color: white; 
+	font-family: Georgia, serif;
 }
 
 header{
-    background: yellow;
-    /*height: 200px;*/
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 0 10px 0;
+ /* border-style: solid;
+  border-width: 1px;
+  border-color: white; */
 }
 
 #top{
-    height: 60px;
-    background: orange;
+  background:#0f2c04 ;
+  padding: 10px 30px 10px 10px;
+  overflow: hidden;
+  top: 0 !important;
 }
 
 #inner-header{
-    max-width: 1200px;
-    margin: 0 auto;
-    background:black;
-    padding: 10px 20px 10px 0;
-
+  max-width: 1200px;
+  margin: 0 auto;
+  background:black;
+  padding: 10px 20px 10px 0;
+  /* border: white solid 1px; */
+  clear: both;
 }
 
-/* this is our background image*/
+#inner-footer{
+	max-width: 1200px;
+	height: 160px;
+	margin: 0 auto;
+	background:#0f2c04;
+	padding: 10px;
+/*	border: #fff solid 1px; */
+	/* border: white solid 1px; */
+  }
+  
+ 
+/* this is our background image  */
 
 #hero{
-    height: 400px;
-    background: red;
+  background: #1b1b1b;
 }
 
+#hero{
+	background-image: url(https://www.24kgolden.io/it270/final/wp-content/uploads/0wlfront2.png);
+	
+background-attachment: fixed;
+background-size: 100%;
+background-position: 0 100px;
+min-height: 700px;
+max-width:100%;
+background-repeat: no-repeat;
+
+}
+
+#hero_bands{
+	background-image: url(https://www.24kgolden.io/it270/final/wp-content/uploads/home-header1-scaled.jpg);
+	
+background-attachment: fixed;
+background-size: 100%;
+background-position: 0 100px;
+min-height: 700px;
+max-width:100%;
+background-repeat: no-repeat;
+
+}
+
+#hero_menu{
+	background-image: url(https://www.24kgolden.io/it270/final/wp-content/uploads/fishnchips.jpg);
+	
+background-attachment: fixed;
+background-size: 100%;
+background-position: 0 100px;
+min-height: 700px;
+max-width:100%;
+background-repeat: no-repeat;
+
+}
+
+#hero_blogs{
+	background-image: url(https://www.24kgolden.io/it270/final/wp-content/uploads/dining_room.jpg);
+	
+background-attachment: fixed;
+background-size: 100%;
+background-position: 0 100px;
+min-height: 700px;
+max-width:100%;
+background-repeat: no-repeat;
+
+}
+
+
+#hero img{
+	display: none;
+	margin: auto !important;
+}
+
+.img_hero{
+	margin: auto;
+}
+
+
+.inner-page #hero{
+	/* background-image: url(https://www.24kgolden.io/it270/final/wp-content/uploads/fishnchips.jpg); */
+	
+background-attachment: fixed;
+background-size: 100%;
+background-position: 0 100px;
+min-height: 300px;
+max-width: 100%;
+background-repeat: no-repeat;
+
+} */
+
+.main.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+
+
 #wrapper{
-    max-width: 1200px;
-    margin: 20px auto;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+#wrapper h2{
+/*	margin:0 0 5px 20px; */
+}
+
+#wrapper p{
+	margin-left: 15px;
+}
+
+/* .main_404{
+	margin-top: 150px;
+} */
+
+.error404 #wrapper, .search #wrapper{
+	margin: 200px auto 0 auto;
+}
+
+.inner-wrapper{
+	/* border: #fff solid; */
+	/* background: #1b1b1b;*/
+	/* max-width: 400px !important; */
+	text-align: center;
+	padding: 10px;
+}
+
+.inner-wrapper h1{
+	margin-top: 10px;
+	font-style: italic;
+	font-size: 3em;
+	background: #132010;
+}
+
+.inner-wrapper h2{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	background: #233b1e;
+}
+
+.inner-wrapper h3{
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+.inner-wrapper p{
+	margin-bottom: 0 !important;
+  }
+.home .inner-wrapper h3{
+	background: #0f2c04;
+	margin: 10px 0 5px 0;
 }
 
 main{
-    width: 62%;
-    float: left;
+  width: 62%;
+  float: left;
+}
+
+#music_main{
+	width: 100% !important;
+}
+
+.cover{
+	background: none !important;
+  color: orange;
 }
 
 aside{
-    float: right;
-    width: 35%;
-    height: 400px;
-    background: #ddd;
+  float: right;
+  width: 35%;
+  height: auto;
+  background:#1b1b1b;
 }
 
 footer{
-        background: lightcyan;
-        height: 300px;
-        clear: both;
-    }
-    
+  height:auto;
+  background: #0f2c04;
+ /* border: #fff solid 1px; */
+  text-align: center;
+  clear: both;
+}
+
+#footer_info ul li{
+	display: inline;
+	margin: 2px;
+}
+
+#address{
+	margin-top: 20px;
+}
 
 .nav-button{
-    display: none;
+  display: none;
 }
 
 #site-navigation{
-    float: right;
+  float: right;
+
 }
 
 #site-navigation li{
-    float: left;
-    list-style-type: none;
-    margin-left: 15px;
+  float: left;
+  list-style-type: none;
+  margin-left: 15px;
+ 
 }
-
 
 #site-navigation li a{
-    text-decoration: none;
+  text-decoration: none;
+  padding-bottom: 5px;
 }
 
-
-#site-navigation li:hover{
-    background-color: rgb(66, 64, 64);
-}
 
 .sub-menu{
-    display: none;
+  display: none;
 }
 
-#site-navigation li:hover .sub-menu {
-    display: block;
-    position: absolute;
-    background: #fff !important; /* not working */
-    padding: 5px;
+#site-navigation li:hover .sub-menu{
+  display: block;
+  position: absolute;
+  background: white;
+  padding: 5px;
+  /* top: 24px; */
+  /* width: 180px; */
 }
 
 #site-navigation li:hover .sub-menu li{
-    margin-left: 0;
+  margin-left: 0;
+  float: none;
 }
 
-    /* typography */
+/* classes and ids*/
 
-#wrapper h1{
-     text-align: center; 
+#searchsubmit{
+  background: #fff;
+  color: #000000;
 }
 
-.home_p{
-    text-align: center;
+.screen-reader-text{
+  display: none;
 }
 
-.page_p{
-    text-align: center;
+#top #searchform{
+  float: right;
+}
+
+
+
+
+/* typography */
+
+#wrapper h2, h3, p{
+ /* text-align: center; */
+  font-weight: bold;
+} 
+
+/* #wrapper h2{
+  font-size: 3em;
+} */
+
+#wrapper h2{
+  line-height: 1.8;
 }
 
 p{
-       margin-bottom: 20px;
-    }
+  margin-bottom: 20px;
+}
 
 .title{
-    font-size: 2em;
+  font-size: 2em;
+  background: #282828;
+  margin: 0 0 5px 30px !important;
+}
+
+
+
+a{
+  color: #63a755;
+}
+
+.h1_page{
+  font-size: 5em;
+  text-align: center;
+}
+
+.h2_page{
+  font-size: 3em;
+  text-align: center;
+}
+
+.h3_page{
+  font-size: 3em;
+  text-align: center;
+}
+
+.p_page{
+  text-align: center;
+  margin-top: 5px;
+}
+
+#music_main{
+	text-align: center;
+}
+
+#music_main h1{
+	font-style: oblique;
+	margin-bottom: 10px;
+	font-size: 3em;
+	/* background: #132010; */
+}
+
+#music_main h2{
+	margin: 10px 0 10px 0;
+	font-size: 2em;
+	background: #233b1e;
+	width: auto;
+}
+#music_main p{
+	margin-bottom: 5px;
+}
+
+.inner-widget h3{
+	background: #c37e00 !important;
+	height: 30px;
+	padding-top: 5px;
+}
+
+
+.main_404 h3{
+	margin: 10px 0 10px 0;
+}
+
+.widget-area h3{
+	background: #132010;
+	padding-left: 5px;
+}
+
+.widget-area{
+	margin-top: 10px;
+}
+
+.inner-widget ul{
+	list-style-type: none;
+
+}
+
+.inner-widget ul li{
+	margin: 2px 0 5px 10px;
+}
+
+.inner-menu p{
+	margin-bottom: 5px !important;
+}
+
+.inner-menu h3{
+	font-size: 2em;
+	padding: 5px;
+	margin-bottom: 5px !important;
+	background: #c37e00;
+}
+
+.inner-menu h2{
+	background: none;
+	margin-top: 0px;
+}
+
+.inner-menu h4{
+	margin: 5px 0 5px 0;
+}
+
+/* band page css */
+#bands_main{
+	text-align: center;
+}
+
+#bands_main h1{
+	font-style: oblique;
+	margin-bottom: 10px;
+	font-size: 3em;
+	background: #132010;
+}
+
+#bands_main h2{
+	margin: 10px 0 10px 0;
+	font-size: 2em;
+	background: #132010;
+	width: auto;
+}
+#bands_main p{
+	margin-bottom: 5px;
+}
+
+.band_links{
+	font-size: 2em;
+}
+
+#main_bands{
+  background: #1b1b1b;
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+
+
+#main_bands h1{
+	background: #132010;
+}
+
+/* about page css */
+
+#about_main{
+	text-align: center;
+	background: #1b1b1b;
+	margin-top: 10px;
+}
+
+#about_main h1{
+	background: #0f2c04;
+}
+
+#about_main h2{
+	background: #0f2c04;
+}
+
+
+
+
+
+.single_main h2{
+	background: #0f2c04;
 }
 
 .meta span{
-    display: block;
-    font-style: italic;
+  display: block;
+ /* text-align: center; */
+  font-style: italic;
+  margin-bottom: 5px;
+  margin-left: 30px;
 }
 
-.post{
-    margin-left: 10px;
-    margin-bottom: 5px;
+#main .post{
+	text-align: center;
+}
+/* food menu css */
+
+
+#post-140{
+/* margin: 10px 0 0 50px;*/
+text-align: center;
 }
 
-.comment-reply-title{
-    margin-left: 10px;
+#post-140 h3{
+  margin-bottom: 15px;
 }
 
-.block{
-    margin-bottom: 10px;
+#post-140 p{
+  margin: 5px 0 5px 0;
 }
 
-/*  comment form css */
+#post-140 h1{
+  margin-bottom: 5px;
+  font-size: 4em;
+}
+
+.blog_main{
+	/* background:#1b1b1b; */
+}
+
+.blog_main .post{
+	margin-top: 10px;
+}
+
+
+/* comment form css  */
 
 #commentform{
-    border: 1px solid white;
-    padding: 10px;
-    margin: 10px 0 20px 0;
+  background:#1b1b1b ;
+  border: 1px solid white;
+  padding: 10px;
+  margin: 10px 20px 20px 30px;
 }
 
 .comment-notes{
-    font-style: italic;
-    color:red !important;
-    margin-bottom: 6px; 
-}
-
-label{
-    display: block;
-}
-.comment-form-cookies-consent label{
-    display: inline;
-}
-
-#comments{
-    margin-left: 10px;
-}
-.comment-form p{
-    margin-bottom: 10px;
+  font-size: .9em;
+  font-style: italic;
+  margin-bottom: 6px;
 }
 
 .commentlist{
-    margin: 10px 0 15px 30px;
+  margin: 10px 0 15px 30px;
 }
 
-/* the beginning of our medai queries */
+#reply-title{
+  margin: 10px 0 0 30px;
+}
+
+#respond{
+width: 500px;
+}
+
+ #respond span{
+  margin-bottom: .5px;
+ }
+
+label{
+  display: block;
+} 
+
+.comment-form-cookies-consent label{
+  display: inline;
+}
+
+.comment-form p{
+  margin-bottom: 10px;
+}
+
+#comments {
+	margin-left: 15px;
+}
+
+
+/* formidable forms newsletter css */
+
+.frm_primary_label{
+color: white !important;
+}
+
+.frm_button_submit{
+	background: #5ccd99 !important;
+}
+
+#form_jkzu1{
+	margin-left: 10px;
+}
+
+/*  the beginning of media queries */
+
+@media screen and (max-width: 1450px){
+#hero {
+background-image: none;
+background-color: #000000;
+margin-top: 100px;
+min-height: auto;
+}
+
+#hero img{
+	display: block;
+}
+
+}
+
+@media screen and (max-width: 900px){
+	#hero {
+	background-image: none;
+	background-color: #000000;
+	margin-top: 100px;
+	min-height: auto;
+	}
+	
+	#hero img{
+		display: block;
+		margin: auto;
+	}
+	
+	}
+
+.primary-nav li :hover{
+	background: #cacdcd;
+}
 
 
 @media only screen and (max-width: 700px) {
@@ -223,7 +656,7 @@ label{
 	.primary-nav {
 		width: 100%;
 		float: none;
-		background-color: black; /* change the menu color */
+	    background-color: #1b1b1b; /* change the menu color */
 		background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
 		display: block;
 		height: 50px;
@@ -243,25 +676,19 @@ label{
 		font-family: Arial;
 	}
 
-    /* my navigational styles */
+  /* my navigation styles */
+  #site-navigation li{
+    float: left;
+    margin-left: 0;
+  }
 
-    #site-navigation li{
-        float: none;
-        margin-left: 0;
-    }
-
-    #site-navigation li:hover .sub-menu{
-        position: static;
-        background: none;
-        padding: 0px;
-    } 
-
-	.primary-nav .sub-menu li{
-		display: block;
-	}
-
-/*  end my navigational styles */
-    
+  #site-navigation li:hover .sub-menu{
+    position: static;
+    background: none;
+    padding: 0;
+  }
+  
+  /* end my navigation styles */
 	.primary-nav li a {
 		display: block;
 		width: 100%;
@@ -269,14 +696,13 @@ label{
 		font-size: 14px;
 		font-weight: bold;
 		text-shadow: -1px -1px 0 rgba(0,0,0,.15);
-		color: white;
+    color: #5ccd99;
 		text-decoration: none;
 		border-bottom: 1px solid rgba(0,0,0,.2);
 		border-top: 1px solid rgba(255,255,255,.1);
 	}
-   
 	.primary-nav li a:hover {
-		background-color: rgba(39, 37, 37, 0.9); /*  (0,0,0,.9)  */
+		background-color: #363636;
 		border-top-color: transparent;
 	}
 	.primary-nav > li:first-child {
@@ -296,7 +722,7 @@ label{
 	/* Submenus – optional .parent class indicates dropdowns */
 
 	.primary-nav > li:hover > a {
-		background: rgba(0,0,0,.5);
+		background: #282828;
 		border-bottom-color: transparent;
 	}
 	.primary-nav li.parent > a:after {

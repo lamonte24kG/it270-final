@@ -4,21 +4,20 @@ get_header();
 
 <!-- THE INDEX PHP PAGE IS ASSIGNED TO THE BLOG PAGE!!!! Blog container for all of our posts-->
 <!-- if we have posts show them -->  
-<div id="hero_blogs">
-<img src="<?php echo get_template_directory_uri() ;?>/images/" alt="dining room">
-</div>
-
-<!--
-<div id="hero_blog">
-<img class="img_hero" src="<?php echo get_template_directory_uri() ;?>/images/" alt="owl dining room">
-</div> -->
-<!-- end hero -->
 
 <div id="wrapper">
-<main id="main" class="blog_main">
+<!-- add picture here -->
+
+<main id="main">
 <?php if(have_posts()) : ?>
 <!-- show the posts by using a while loop-->
-
+<!-- add picture here -->
+<h2>Search Results For: <?php echo get_search_query() ;?>
+</h2>
+<!-- add how many posts or pages were found -->
+<p>Our findings for
+<?php /* Search Count */
+$allsearch = new WP_Query("s=$s&showposts=-1"); $key = wp_specialchars($s, 1); $count = $allsearch->post_count; _e(''); _e('<span class="search-terms">'); echo $key; _e('</span>'); _e(' &mdash; '); echo $count . ' '; _e('articles/pages'); wp_reset_query(); ?></p>
 <?php while(have_posts()) : the_post() ;?>
 <article class="post">
 <h2 class="title">
@@ -56,7 +55,8 @@ get_header();
 <?php endwhile ; ?>
 <?php else : ?>
 <h2>
-Search Results:
+No Content For:
+<?php echo get_search_query() ;?>
 </h2>
 <p>Sorry, we could not find anything matching your search terms. Would you like to search again, using different keywords?
 </p>
@@ -64,10 +64,7 @@ Search Results:
 <?php endif; ?>
 </main>
 
-<?php get_sidebar() ; ?>
-
-
-
+<?php get_sidebar(); ?>
 
 </div>
 <!-- close wrapper-->

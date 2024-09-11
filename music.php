@@ -1,20 +1,19 @@
 <?php 
 get_header();
-/* Template Name: Front Page */
+/* Template Name: Music Page */
 ?>
 <!-- In the above php you MUST add the comment with template name!!!!!-->
 <!-- THE INDEX PHP PAGE IS ASSIGNED TO THE BLOG PAGE!!!!-->
 <!-- if we have posts show them -->  
 
-<div id="hero">
-<img src="<?php echo get_template_directory_uri() ;?>/images/0wlfront2.png" alt="owlmain">
+<div id="hero_bands">
+<img src="<?php echo get_template_directory_uri() ;?>/images/home-header1-scaled.jpg" alt="bands_main">
 </div>
-<!-- end hero -->
+
 
 
 <div id="wrapper">
-    <div class="inner-wrapper">
-
+<main id="music_main">
 <?php if(have_posts()) : ?>
 <!-- show the posts by using a while loop-->
 <?php while(have_posts()) : the_post() ;?>
@@ -25,11 +24,15 @@ get_header();
 <?php echo wpautop('Sorry, no posts were found!'); ?>
 </h2>
 <?php endif; ?>
+</main>
+
+<!-- <aside id="music_aside">
+This my music aside
+</aside> --> 
 
 
 
-</div>
-<!-- close inner wrapper-->
+
 </div>
 <!-- close wrapper-->
 

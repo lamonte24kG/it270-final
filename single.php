@@ -1,29 +1,33 @@
-<?php get_header();
+<?php 
+get_header();
 ?>
-<!--this is the single post, will display the whole post-->
-<!-- index pages is assigned to blog page-->
-<!-- the index.php is assigned to the blog page!!!--> 
-<!--if we have post or pages show them-->
+
+<!-- THE INDEX PHP PAGE IS ASSIGNED TO THE BLOG PAGE!!!! Blog container for all of our posts-->
+<!-- if we have posts show them -->  
+
+<div id="hero">
+<img src="<?php echo get_template_directory_uri() ;?>/images/owl-outside-view.jpg" alt="owlmain">
+</div>
+<!-- end hero -->
 
 <div id="wrapper">
-<main>
+<main id="main" class="single_main">
 <?php if(have_posts()) : ?>
-<!--show post by using a php while loop-->
-<?php while(have_posts()) : the_post() ; ?>
-
+<!-- show the posts by using a while loop-->
+<?php while(have_posts()) : the_post() ;?>
 <article class="post">
 <h2 class="title">
+<?php the_title() ;?>
+</h2> 
 
-<?php the_title() ; ?>
-</a>
-</h2>
 <div class="meta">
-<span><b>Posted By:</b><?php the_author(); ?></span>
-<span><b>Posted On:</b><?php the_time('F j, Y g:i a'); ?></span>
+<span><b>Posted By: </b><?php the_author() ;?></span>
+<span><b>Posted On: </b><?php the_time('F j, Y g:i a') ;?></span>
 
 </div>
 <!-- close meta -->
-<?php the_content() ; ?>
+
+<?php the_content() ;?>
 
 </article>
 <?php endwhile ; ?>
@@ -35,15 +39,13 @@
 <?php comments_template(); ?>
 </main>
 
-
-
+<?php get_sidebar(); ?>
 
 
 </div>
-<!--close wrapper-->  
+<!-- close wrapper-->
 
-<?php get_footer();
+
+<?php
+get_footer();
 ?>
-
-
-
